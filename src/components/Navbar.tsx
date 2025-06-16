@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
@@ -40,34 +39,8 @@ const Navbar = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(`
-ADITI SANJAY BANDEWAR
-Frontend Developer & Tech Enthusiast
-Email: aditibandewar068@gmail.com
-Phone: 9975392467
-
-EDUCATION
-Bachelor of Technology in Information Technology (2021-2025)
-MGM's College of Engineering, Nanded - CGPA: 8.5
-
-SKILLS
-• Programming: C++, JavaScript, SQL
-• Frontend: HTML, CSS, React, Bootstrap
-• Backend: Firebase, PHP, MySQL
-• Tools: Git, GitHub
-
-PROJECTS
-• Movie Recommendation System - Streamlit, Python, ML Algorithm, API
-• Contact Manager - React.js, Firebase, REST API
-• Primary School Management System - Full-stack PHP/MySQL
-
-ACHIEVEMENTS
-• Intel® Unnati Industrial Training–2024 in Power Manager Telemetry
-• 150+ competitive programming challenges solved
-• Google Developer Student Club core team member
-• Multiple technical certifications
-    `);
-    link.download = 'Aditi_Bandewar_Resume.txt';
+    link.href = '/resume/Aditi_Tcs.pdf';
+    link.download = 'Aditi_Tcs.pdf';
     link.click();
   };
 
@@ -100,7 +73,7 @@ ACHIEVEMENTS
               ))}
               <Button
                 onClick={downloadResume}
-                className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white border-0 rounded-xl"
+                className="bg-gradient-to-r from-teal-700 to-cyan-700 hover:from-teal-800 hover:to-cyan-800 text-white border-0 rounded-xl shadow-md hover:shadow-lg"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume

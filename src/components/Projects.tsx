@@ -41,7 +41,7 @@ const Projects = () => {
       liveUrl: "#",
       icon: <Smartphone className="w-6 h-6" />,
       gradient: "from-emerald-500 to-teal-500",
-      image: "/lovable-uploads/38ea9685-bd0e-4cba-a48e-b69838bbae1b.png"
+      image: "/images/projects/contact-manager.png"
     },
     {
       title: "Movie Recommendation System",
@@ -58,7 +58,7 @@ const Projects = () => {
       liveUrl: null,
       icon: <Film className="w-6 h-6" />,
       gradient: "from-teal-500 to-cyan-500",
-      image: "/lovable-uploads/59589333-3e22-4f31-a5de-396ce68bf8f6.png"
+      image: "/images/projects/movie-recommender.png"
     },
     {
       title: "Primary School Management System",
@@ -75,7 +75,7 @@ const Projects = () => {
       liveUrl: null,
       icon: <Database className="w-6 h-6" />,
       gradient: "from-cyan-500 to-blue-500",
-      image: "/lovable-uploads/5140d761-fa94-4ca1-9dc6-99f7545669d7.png"
+      image: "/images/projects/school-management.png"
     },
     {
       title: "Personal Portfolio Website",
@@ -88,11 +88,11 @@ const Projects = () => {
         "Contact form and social links",
         "Clean, accessible codebase"
       ],
-      githubUrl: "https://github.com/aditibandewar", // point to portfolio repo or GitHub
-      liveUrl: "#home", // could link to live home (top)
-      icon: <Smartphone className="w-6 h-6" />, // or use any icon - using Smartphone here
+      githubUrl: "https://github.com/aditibandewar",
+      liveUrl: "#home",
+      icon: <Smartphone className="w-6 h-6" />,
       gradient: "from-teal-400 to-indigo-500",
-      image: "/lovable-uploads/photo-1488590528505-98d2b5aba04b" // use provided portfolio image or placeholder
+      image: "/images/projects/portfolio.png"
     }
   ];
 
