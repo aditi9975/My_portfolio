@@ -101,7 +101,7 @@ const Hero = () => {
           {/* Name Introduction */}
           <div className="mb-12 animate-fade-in">
             <p className="text-lg md:text-xl text-teal-300 font-medium mb-4">Hello, I'm</p>
-            <h1 className="text-7xl md:text-9xl font-bold bg-gradient-to-r from-white via-teal-200 to-white bg-clip-text text-transparent mb-8">
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-teal-200 to-white bg-clip-text text-transparent mb-8">
               Aditi Bandewar
             </h1>
           </div>

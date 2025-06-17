@@ -74,7 +74,7 @@ const About = () => {
                 </h3>
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p>
-                    Hello! I'm Aditi, a passionate Frontend Developer currently pursuing my 
+                    Hello! I'm Aditi, a passionate Full Stack Developer currently pursuing my 
                     Bachelor's in Information Technology at MGM's College of Engineering, Nanded. 
                     My journey in tech began with curiosity and has evolved into a deep passion 
                     for creating digital experiences that matter.

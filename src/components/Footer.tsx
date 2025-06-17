@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, Heart, Code } from "lucide-react";
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
               Aditi Bandewar
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Frontend Developer passionate about creating beautiful, functional web applications 
+              Full Stack Developer passionate about creating beautiful, functional web applications 
               that make a difference in people's lives.
             </p>
           </div>
@@ -76,14 +75,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm flex items-center mb-4 md:mb-0">
-              Made with{" "}
-              <Heart className="w-4 h-4 mx-1 text-red-400 fill-current" />
-              and{" "}
-              <Code className="w-4 h-4 mx-1 text-teal-400" />
-              by Aditi Bandewar
-            </p>
+          <div className="flex justify-center items-center">
             <p className="text-gray-400 text-sm">
               © {currentYear} All rights reserved.
             </p>
