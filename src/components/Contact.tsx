@@ -22,31 +22,41 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const result = await emailjs.send(
+      // Send message to yourself
+      await emailjs.send(
         "service_p3aen7j", // Service ID
-        "template_hv4cpb5", // Template ID
+        "template_trh8utw", // Template for receiving message
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
         "aTJCwGMKZ0zmQAN7i" // Public Key
       );
 
-      if (result.status === 200) {
-        toast({
-          title: "Message Sent Successfully!",
-          description: "Thank you for reaching out. I'll get back to you soon!",
-        });
-        
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: ""
-        });
-      }
+      // Send confirmation to sender
+      await emailjs.send(
+        "service_p3aen7j", // Same service ID
+        "template_hv4cpb5", // Template for confirmation
+        {
+          to_name: formData.name,
+          to_email: formData.email,
+        },
+        "aTJCwGMKZ0zmQAN7i" // Public Key
+      );
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
     } catch (error) {
       console.error("Email sending failed:", error);
       toast({
