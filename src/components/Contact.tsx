@@ -24,26 +24,27 @@ const Contact = () => {
     try {
       // Send message to yourself
       await emailjs.send(
-        "service_p3aen7j", // Service ID
-        "template_trh8utw", // Template for receiving message
+        "service_p3aen7j",
+        "template_hv4cpb5", // ✅ Correct: Contact Us template
         {
           name: formData.name,
-          email: formData.email,
+          email: formData.email, // used in reply_to (hello {{email}})
           subject: formData.subject,
           message: formData.message,
+          title: formData.subject // because template uses {{title}} in subject
         },
-        "aTJCwGMKZ0zmQAN7i" // Public Key
+        "aTJCwGMKZ0zmQAN7i"
       );
-
+      
       // Send confirmation to sender
       await emailjs.send(
-        "service_p3aen7j", // Same service ID
-        "template_hv4cpb5", // Template for confirmation
+        "service_p3aen7j",
+        "template_trh8utw", // ✅ Correct: Auto-Reply template
         {
           to_name: formData.name,
-          to_email: formData.email,
+          to_email: formData.email // required as To Email = {{to_email}}
         },
-        "aTJCwGMKZ0zmQAN7i" // Public Key
+        "aTJCwGMKZ0zmQAN7i"
       );
 
       toast({
